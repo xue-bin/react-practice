@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import './index.css'
 
 // const count = 100;
@@ -67,6 +67,13 @@ function App() {
   //   setForm({ ...form, name: "john" });
   // };
 
+  // const [value, setValue] = useState('')
+
+  // const inputRef = useRef(null)
+  // const showDom = () => {
+  //   console.dir(inputRef.current)
+  // }
+
   return (
     <div className="App">
       {/* this is App
@@ -90,7 +97,10 @@ function App() {
       <Button></Button> */}
       {/* <button onClick={handleClick}>{count}</button>
       <button onClick={changeForm}>change form {form.name}</button> */}
-      <span className="foo">this is class foo</span>
+      {/* <span className="foo">this is class foo</span> */}
+      {/* <input value={value} onChange={(e) => setValue(e.target.value)} type="text"/> */}
+      {/* <input type="text" ref={inputRef} />
+      <button onClick={showDom}>get dom</button> */}
     </div>
   );
 }
